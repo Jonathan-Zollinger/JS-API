@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: org.justserve
+testFramework: spock
+sourceLanguage: kotlin
+buildTool: gradle_kotlin
+features: [app-name, graalvm, gradle, http-client, kotlin, kotlin-application, kotlin-extension-functions, ksp, logback, micronaut-aot, micronaut-build, micronaut-http-validation, netty-server, readme, serialization-jackson, shade, spock, static-resources, yaml, yaml-build]
