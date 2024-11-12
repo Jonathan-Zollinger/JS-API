@@ -1,4 +1,5 @@
 
 
-rootProject.name="resources"
-
+rootProject.name="JustServe"
+include("core")
+include("cli")
