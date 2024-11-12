@@ -2,7 +2,7 @@ plugins {
     id("java")
 }
 
-group = "com.jonathanzollinger.justserve"
+group = "org.justserve.helpcenter"
 version = "0.1"
 
 repositories {
