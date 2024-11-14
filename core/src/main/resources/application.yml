@@ -1,3 +1,8 @@
 micronaut:
   application:
     name: justServe
+  http:
+    services:
+      email:
+        url: https://www.justserve.org/
+        path: api/v1/email/

@@ -6,7 +6,6 @@ import io.micronaut.http.annotation.Header
 import io.micronaut.http.annotation.Headers
 import io.micronaut.http.annotation.Post
 import io.micronaut.http.client.annotation.Client
-import justserve.helpcenter.model.LeadNameRequest
 import justserve.helpcenter.model.LeadNameResponse
 
 @Client(id = "email")
@@ -28,7 +27,14 @@ import justserve.helpcenter.model.LeadNameResponse
 )
 interface EmailApiClient {
 
+    /**
+     * Retrieves the specialist for a given location. Uses the same Post request from the justserve.org/about page.
+     * Makes a POST request to the `https://www.justserve.org/api/v1/email/contact/leadName` endpoint.
+     *
+     * @param leadNameRequest the lead name request object containing the necessary information
+     * @return the LeadNameResponse for the specialist containing the lead name and any additional information
+     */
     @Post("/contact/leadName")
     @SingleResult
-    fun requestLeadName(@Body leadNameRequest: LeadNameRequest): LeadNameResponse
+    fun requestLeadName(@Body leadNameRequest: LeadNameResponse): LeadNameResponse
 }

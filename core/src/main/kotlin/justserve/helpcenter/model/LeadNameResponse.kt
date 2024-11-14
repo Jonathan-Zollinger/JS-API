@@ -1,5 +1,4 @@
 package justserve.helpcenter.model
 
-class LeadNameResponse {
+data class LeadNameResponse(val latitude: String, val longitude: String, val lang: String)
 
-}
